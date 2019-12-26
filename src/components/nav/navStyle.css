@@ -1,0 +1,21 @@
+
+a.dropdown-item.active{
+    background-color: #49B050 !important;
+    color: #fff !important;
+}
+
+.navbar-custom a.nav-link.active {
+    color: #49B050 !important;
+}
+
+.navbar-custom a.nav-link {
+    color: #6c757d !important;
+    margin-right: 1.5rem !important;
+    font-size: 1rem !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav-brand{
+    margin-right: 20px !important;
+}
