@@ -1,3 +1,14 @@
+.navbar {
+    margin: 10px 5px;
+}
+.navbar-brand{
+   text-transform: uppercase;
+}
+.mr-auto{
+    justify-content: center;
+    margin-left: 22px;
+}  
+
 .App{
   padding-top: 8rem;
   margin-top:0rem;
@@ -49,6 +60,31 @@
     z-index: -1;
   }
 
+  .questionInput,
+  .answerInput,
+  .optionInput{
+    padding: 8px;
+    margin: 8px 2px;
+    border-radius: 5px;
+    border: 1px solid ;
+    outline: none;
+  }
+
+  .questionInput{
+    width: 80% !important;
+    height: 200px !important;
+    margin-bottom: 15px;
+  }
+
+  .answerInput{
+    color: #49B050;
+    border: 1px solid #49B050;
+  
+  }
+
+  .optionInput{
+    justify-content: center;
+  }
 
   @media (max-width: 600px){
     #home{
@@ -58,5 +94,11 @@
       padding: 3rem;
       padding-top: 35%;
     }
-
+    .navbar-brand{
+      text-transform: uppercase;
+      width:50%;
+    }
+    .navbar-brand img{
+      width:100%;
+    }
   }

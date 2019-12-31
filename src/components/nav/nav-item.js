@@ -11,7 +11,7 @@ class NavItem extends Component{
         return (
             <Nav defaultActiveKey="#home" 
                 className="mr-auto navbar-custom">
-                    <Nav.Link href="#home" class="active">Home</Nav.Link>
+                    <Nav.Link href="/" class="active">Home</Nav.Link>
                     <NavDropdown title="Quiz" id="collasible-nav-dropdown" class="ddown-custom">
                         <NavDropdown.Item href="#dq">Daily Quiz</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Saturday Task</NavDropdown.Item>

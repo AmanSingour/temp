@@ -11,7 +11,7 @@ class NavBar extends Component{
     render(){
         return (
             <Navbar collapseOnSelect expand="md" bg="#fff" variant="light">
-                <Navbar.Brand  href="#home"><img width={this.props.width} height={this.props.height} src={this.props.logo} alt='CODEZILA'/></Navbar.Brand>
+                <Navbar.Brand  href="/"><img width={this.props.width} height={this.props.height} src={this.props.logo} alt='CODEZILA'/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <NavItem/>
