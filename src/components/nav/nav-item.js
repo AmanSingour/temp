@@ -12,7 +12,8 @@ class NavItem extends Component{
             <Nav defaultActiveKey="#home" 
                 className="mr-auto navbar-custom">
                     <Nav.Link href="/" class="active">Home</Nav.Link>
-                    <NavDropdown title="Quiz" id="collasible-nav-dropdown" class="ddown-custom">
+                    <Nav.Link href="/learn">learning</Nav.Link>
+                    <NavDropdown disabled title="Quiz" id="collasible-nav-dropdown" class="ddown-custom">
                         <NavDropdown.Item href="#dq">Daily Quiz</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Saturday Task</NavDropdown.Item>
                         <NavDropdown.Divider />

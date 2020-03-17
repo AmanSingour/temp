@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import logo from "./res/logo_tagline@288x.svg";
 
@@ -15,15 +15,14 @@ import { Container } from 'react-bootstrap';
 import NavBar from './components/nav/nav-bar';
 import Footer from './components/footer/footer';
 import Ace from './components/quiz/editor';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
         <Container-Fluid>
             <BrowserRouter>
-                  <div class='Header'>
-                    <Container sticky='top' >
+                  <div class='Header' sticky='top'>
                       <NavBar class='ontop' logo={logo} width='50%'/>
-                    </Container>
                   </div>
                 <div id="App">
                   <div>
@@ -34,10 +33,9 @@ function App() {
                       <Route component={Error}/>
                     </Switch>
                   </div> 
-                </div>  <div class='footer'>
-                <Container>          
+                </div>  
+                <div class='footer'>      
                   <Footer />
-                </Container>
               </div>
             </BrowserRouter>
       
@@ -45,4 +43,14 @@ function App() {
   );
 }
 
-export default App;
+class AppContainer extends Component {
+    render() {
+        return (
+            <ParallaxProvider>
+                <App />
+            </ParallaxProvider>
+        );
+    }
+}
+
+export default AppContainer;

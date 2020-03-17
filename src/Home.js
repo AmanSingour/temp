@@ -1,13 +1,10 @@
 import React from 'react';
 import './App.css';
-import logo from "./res/logo_tagline@288x.svg";
 
 import {
   Container,
   Col,Row
 } from "react-bootstrap";
-import NavBar from './components/nav/nav-bar';
-import Footer from './components/footer/footer';
 import Quiz from "./components/quiz/quiz-container";
 import AboutComp from "./components/about";
 

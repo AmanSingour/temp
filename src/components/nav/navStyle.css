@@ -4,12 +4,12 @@ a.dropdown-item.active{
     color: #fff !important;
 }
 
-.navbar-custom a.nav-link.active {
+.navbar-custom a.nav-link.active,.nav-link.active {
     color: #49B050 !important;
 }
 
 .navbar-custom a.nav-link {
-    color: #6c757d !important;
+    color: #8e8e8e ;
     margin-right: 1.5rem !important;
     font-size: 1rem !important;
     text-transform: uppercase;
